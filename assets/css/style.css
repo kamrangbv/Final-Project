@@ -1,0 +1,471 @@
+@import url(https://fonts.googleapis.com/css?family=Ubuntu:300,300italic,regular,italic,500,500italic,700,700italic);
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Ubuntu';
+}
+
+/* html {
+    padding: 0 25px;
+} */
+
+img {
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -o-user-select: none;
+    user-select: none;
+}
+
+.hero {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    background-color: #fff;
+    padding: 40px 115px 0 115px;
+}
+
+.rect1 {
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+}
+
+.rect2 {
+    position: absolute;
+    width: 60%;
+    bottom: 0;
+    right: 0;
+}
+
+.row {
+    width: 100%;
+}
+
+.navbar_hero {
+    height: 55px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo {
+    margin: 0;
+    padding: 0;
+    height: 55px;
+    font-size: 30px;
+    font-family: 'Ubuntu';
+    font-weight: 700;
+    font-style: italic;
+    color: #FB3F6C;
+    align-items: center;
+    display: flex;
+}
+
+.navigation {
+    height: 55px;
+    display: flex;
+    list-style-type: none;
+    align-items: center;
+    justify-content: end;
+}
+
+
+.nav_list {
+    margin: 0;
+    height: 55px;
+    list-style-type: none;
+    display: flex;
+    gap: 80px;
+    align-items: center;
+}
+
+
+.nav_item a {
+    color: #747582;
+    font-size: 18px;
+    font-weight: 400;
+    text-decoration: none;
+    white-space: nowrap;
+    transition: linear .2s all;
+}
+
+.nav_item a:hover {
+    color: #282C4B;
+}
+
+.nav_item .nav_button {
+    font-size: 18px;
+    color: #282C4B;
+    font-weight: 700;
+    border: 1px solid #FF698D80;
+    border-radius: 80px;
+    padding: 20px 40px;
+    white-space: nowrap;
+}
+
+.nav_item .nav_button:hover {
+    border: 1px solid #FF698D80;
+    background-color: #FF698D;
+    color: #fff;
+}
+
+.main_hero {
+    min-height: calc(100vh - 95px);
+}
+
+.main_text {
+    padding-top: 140px;
+    z-index: 100;
+}
+
+.main_text p {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    color: #F17216;
+    align-items: center;
+}
+
+.main_text .main_description {
+    font-family: 'Ubuntu';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 36px;
+    color: #747582;
+    margin-top: 25px;
+}
+
+.main_text h1 {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 58px;
+    line-height: 80px;
+    letter-spacing: 0.02em;
+    color: #282C4B;
+    position: relative;
+}
+
+.verify {
+    margin-right: 10px;
+}
+
+.business_vector {
+    position: absolute;
+    left: 333px;
+    top: 70px;
+}
+
+.main_buttons {
+    margin: 0;
+    margin-top: 60px;
+}
+
+.main_buttons .btn {
+    font-family: 'Ubuntu';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 21px;
+    text-align: center;
+    letter-spacing: 0.02em;
+}
+
+.get_started {
+    color: #FFFFFF;
+    white-space: nowrap;
+    padding: 24px 53px;
+    background: linear-gradient(97.32deg, #FF698D -3.47%, #FB3F6C 108.43%);
+    border: 2px solid rgba(255, 255, 255, 0.8);
+    box-shadow: 0px 30px 50px rgba(168, 22, 75, 0.15);
+    border-radius: 192px;
+    margin-right: 30px;
+    transition: linear .2s all;
+}
+
+.get_started:hover {
+    background: transparent !important;
+    color: #000;
+    border: 2px solid #FF698D80;
+}
+
+.watch_video {
+    color: #282C4B;
+    white-space: nowrap;
+    padding: 24px 33px;
+    align-items: center;
+}
+
+.main_img {
+    min-height: calc(100vh - 95px);
+    display: flex;
+    align-items: center;
+    justify-content: right;
+}
+
+.hero_img {
+    position: relative;
+    width: 696px;
+    height: auto;
+    right: -60px;
+}
+
+/* ------------------------- */
+
+#burger-menu {
+    cursor: pointer;
+    height: 27px;
+    width: 27px;
+    overflow: visible;
+    position: relative;
+    z-index: 300;
+    display: none;
+}
+
+#burger-menu span,
+#burger-menu span:before,
+#burger-menu span:after {
+    background: #000;
+    display: block;
+    height: 4px;
+    opacity: 1;
+    position: absolute;
+    transition: 0.3s ease-in-out;
+}
+
+#burger-menu span:before,
+#burger-menu span:after {
+    content: "";
+}
+
+#burger-menu span {
+    right: 0px;
+    top: 13px;
+    width: 27px;
+}
+
+#burger-menu span:before {
+    left: 0px;
+    top: -10px;
+    width: 27px;
+}
+
+#burger-menu span:after {
+    left: 0px;
+    top: 10px;
+    width: 27px;
+}
+
+#burger-menu.close span {
+    transform: rotate(-45deg);
+    top: 13px;
+    width: 27px;
+    right: 0;
+}
+
+#burger-menu.close span:before {
+    top: 0px;
+    transform: rotate(90deg);
+    width: 27px;
+    right: 0;
+}
+
+#burger-menu.close span:after {
+    top: 0px;
+    right: 0;
+    transform: rotate(90deg);
+    opacity: 0;
+    width: 0;
+}
+
+#menu {
+    z-index: 200;
+    min-width: 100%;
+    min-height: 100%;
+    position: fixed;
+    top: 0;
+    height: 0;
+    visibility: hidden;
+    opacity: 0;
+    text-align: center;
+    padding-top: 20px;
+    transition: all 0.3s ease-in-out;
+    right: 0;
+
+}
+
+#menu.overlay {
+    visibility: visible;
+    opacity: 1;
+    padding-top: 100px;
+    background: rgba(0, 0, 0, 0.5);
+    right: 0;
+}
+
+#menu li {
+    list-style: none;
+}
+
+#menu a {
+    color: #fff;
+    display: block;
+    font-size: 32px;
+    margin-bottom: 30px;
+    text-decoration: none;
+}
+
+
+/* ------------------------- */
+
+
+
+@media only screen and (max-width: 1496px) {
+    #burger-menu {
+        display: flex;
+    }
+
+    .nav_list {
+        display: none;
+    }
+
+    .main_text h1 {
+        font-size: 40px;
+        line-height: 39px;
+    }
+
+    .main_text .main_description {
+        font-size: 16px;
+        line-height: 30px;
+        margin-top: 25px;
+    }
+}
+
+@media only screen and (max-width: 1234px) {
+    .hero_img {
+        width: 496px;
+    }
+
+    .main_text h1 {
+        font-style: normal;
+        font-weight: 700;
+        font-size: 40px;
+        letter-spacing: 0.02em;
+        color: #282C4B;
+        position: relative;
+        line-height: 39px;
+    }
+
+    .main_text .main_description {
+        font-family: 'Ubuntu';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 30px;
+        color: #747582;
+        margin-top: 25px;
+    }
+}
+
+
+
+@media only screen and (max-width: 991px) {
+    .hero_img {
+        display: none;
+    }
+
+    .main_text {
+        padding-top: 90px;
+        z-index: 100;
+    }
+}
+
+@media only screen and (max-width: 897px) {
+    .hero {
+        padding: 40px 35px 0 35px;
+    }
+}
+
+
+@media only screen and (max-width: 668px) {
+    .main_text h1 {
+        font-style: normal;
+        font-weight: 700;
+        font-size: 40px;
+        letter-spacing: 0.02em;
+        color: #282C4B;
+        position: relative;
+        line-height: 60px;
+    }
+}
+
+@media only screen and (max-width: 591px) {
+    .main_buttons .btn {
+        font-size: 13px;
+        line-height: 21px;
+        letter-spacing: 0.02em;
+    }
+}
+
+@media only screen and (max-width: 533px) {
+    .main_text h1 {
+        font-size: 32px;
+        line-height: 39px;
+    }
+
+    .main_text .main_description {
+        font-size: 13px;
+        line-height: 30px;
+        margin-top: 25px;
+    }
+
+    .main_buttons {
+        margin: 0;
+        margin-top: 30px;
+    }
+}
+
+@media only screen and (max-width: 476px) {
+    .main_buttons {
+        display: block;
+    }
+
+    .watch_video {
+        margin-top: 20px;
+        color: #282C4B;
+        white-space: nowrap;
+        padding: 24px 36px;
+        align-items: center;
+    }
+
+    .logo {
+        height: 55px;
+        font-size: 24px;
+    }
+}
+
+@media only screen and (max-width: 360px) {
+    .main_text h1 {
+        font-style: normal;
+        font-weight: 700;
+        font-size: 24px;
+        letter-spacing: 0.02em;
+        color: #282C4B;
+        position: relative;
+        line-height: 39px;
+    }
+
+    .main_text .main_description {
+        font-family: 'Ubuntu';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 13px;
+        line-height: 26px;
+        color: #747582;
+        margin-top: 25px;
+    }
+
+}

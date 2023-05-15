@@ -9,6 +9,13 @@
       content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no"
     />
     <title>PEBISNIS ULUNG</title>
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    
+
     <link
       href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
       rel="stylesheet"
@@ -35,6 +42,7 @@
       integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
       crossorigin="anonymous"
     ></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js" integrity="sha512-Eak/29OTpb36LLo2r47IpVzPBLXnAMPAVypbSZiZ4Qkf8p/7S/XRG5xp7OKWPPYfJT6metI+IORkR5G8F900+g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <link rel="stylesheet" href="./assets/css/style.css" />
   </head>
   <body>
@@ -83,7 +91,7 @@
       </div>
       <div class="container-fluid main_hero">
         <div class="row">
-          <div class="col-xs-12 col-s col-md-6 col-lg-6 main_text">
+          <div class="col-xs-12 col-s col-md-6 col-lg-6 main_text wow animate__animated animate__fadeInLeft">
             <p>
               <img class="verify" src="./img/verify.svg" alt="verify" /> Best
               Business Platform - World Record 2021
@@ -111,11 +119,112 @@
             </div>
           </div>
           <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 main_img">
-            <img src="./img/hero.png" alt="" class="hero_img" />
+            <img src="./img/hero.png" alt="" class="wow animate__animated animate__fadeInRight hero_img" />
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container-fluid partners wow animate__animated animate__fadeIn">
+      <div class="container-fluid partners-container">
+        <div class="col-xs-12 col-sm-12 col-md-3 col-lg-3 justify-cont">
+          <a href="https://slack.com/" target="_blank"
+            ><img
+              class="partners_img"
+              src="./img/partners/slack.svg"
+              alt="slack"
+          /></a>
+        </div>
+        <div class="col-xs-12 col-sm-12 col-md-3 col-lg-3 justify-cont">
+          <a href="https://www.prudential.com/" target="_blank"
+            ><img
+              class="partners_img"
+              src="./img/partners/prudential.svg"
+              alt="prudential"
+          /></a>
+        </div>
+        <div class="col-xs-12 col-sm-12 col-md-3 col-lg-3 justify-cont">
+          <a href="https://www.microsoft.com/en-us/" target="_blank"
+            ><img
+              class="partners_img microsoft"
+              src="./img/partners/microsoft.svg"
+              alt="microsoft"
+          /></a>
+        </div>
+        <div class="col-xs-12 col-sm-12 col-md-3 col-lg-3 justify-cont">
+          <a href="https://www.zoover.nl/" target="_blank"
+            ><img
+              class="partners_img"
+              src="./img/partners/zoover.svg"
+              alt="zoover"
+          /></a>
+        </div>
+      </div>
+    </div>
+    <div class="container-fluid services">
+      <div class="container-fluid services-container">
+        <div class="row">
+          <div class="col-xs-12 col-sm-12 col-md-3 col-lg-3 services_text wow animate__animated animate__fadeInLeft">
+            <p>SERVICES</p>
+            <h1>Our Capabilities</h1>
+            <p class="services_description">
+              We will bring the breathe of our experience and industry knowledge
+              to help you succeed
+            </p>
+            <img class="services_arrow" src="./img/arrow.svg" alt="arrow" />
+          </div>
+          <div class="col-xs-12 col-sm-12 col-md-9 col-lg-9 services_items wow animate__animated animate__fadeInRight">
+            <div class="container-fluid items-container">
+              <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 padding-0">
+                <div class="services_item">
+                  <img
+                    src="./img/services/shop.svg"
+                    alt="shop"
+                    class="item_icon"
+                  />
+                  <h2 class="item_title">Market Forcest</h2>
+                  <p class="item_text">
+                    Leverage agile framework to provide a robust high level
+                    synopsys overviews
+                  </p>
+                </div>
+              </div>
+              <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 padding-0">
+                <div class="services_item">
+                  <img
+                    src="./img/services/cards.svg"
+                    alt="shop"
+                    class="item_icon"
+                  />
+                  <h2 class="item_title">Fund Raising</h2>
+                  <p class="item_text">
+                    Bring to the table survival strategies to ensure proactive
+                    domination
+                  </p>
+                </div>
+              </div>
+              <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 padding-0">
+                <div class="services_item">
+                  <img
+                    src="./img/services/favorite-chart.svg"
+                    alt="shop"
+                    class="item_icon"
+                  />
+                  <h2 class="item_title">Cash Flow</h2>
+                  <p class="item_text">
+                    Grow the holistic world view of disruptive innovation
+                    workspace
+                  </p>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
     </div>
   </body>
   <script src="./assets/js/script.js"></script>
+    </script>
+    <script>
+    new WOW().init();
+    </script>
 </html>

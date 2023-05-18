@@ -78,6 +78,98 @@ img {
     padding: 50px 110px 50px 110px;
 }
 
+.projects {
+    width: 100%;
+    min-height: 710px;
+    position: relative;
+    background-color: #F5F5F5;
+    padding: 0 115px 0 115px;
+}
+
+.projects-container:first-child {
+    margin-top: 70px;
+}
+
+.projects-container {
+    min-height: 355px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.project-card {
+    max-width: 370px;
+    height: 280px;
+    background-color: #F5F5F5;
+    padding: 12px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    transition: linear .2s all;
+}
+
+.project-info {
+    max-width: 370px;
+    height: 280px;
+    background-color: #F5F5F5;
+    padding: 12px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+    transition: linear .2s all;
+}
+
+.project-info p {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    color: #F17216;
+    align-items: center;
+}
+
+.project-info h1 {
+
+    font-family: 'Ubuntu';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 53px;
+
+    /* or 147% */
+    letter-spacing: 0.02em;
+
+    color: #282C4B;
+}
+
+.project-info h1,
+.project-info p {
+    margin: 0;
+}
+
+.project-card:hover {
+    background-color: #FFFFFF;
+}
+
+.project-card img {
+    width: 100%;
+}
+
+.project-card p {
+    margin: 15px 0 15px 0;
+    text-align: center;
+    font-family: 'Ubuntu';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 25px;
+
+    /* identical to box height, or 125% */
+
+    color: #14183E;
+}
+
 .wcu-img {
     width: 100%;
 }
@@ -250,6 +342,27 @@ img {
     width: 100%;
 }
 
+.proj-button {
+    font-size: 14px;
+    border: 1px solid #FF698D80;
+    color: #282C4B;
+    font-weight: 700;
+    border-radius: 80px;
+    padding: 20px 40px;
+    white-space: nowrap;
+    transition: linear .2s all;
+    text-decoration: none;
+    max-width: 150px;
+    text-align: center;
+}
+
+.proj-button:hover {
+    background-color: #FF698D;
+    border: 1px solid #FF698D80;
+    color: #fff;
+    text-decoration: none;
+
+}
 
 .nav_item a {
     color: #747582;
@@ -685,11 +798,24 @@ img {
     .wcu {
         padding: 0 45px 0 45px;
     }
+
+    .projects {
+        padding: 0 25px 0 25px;
+    }
 }
 
 
 
 @media only screen and (max-width: 991px) {
+    .project-card {
+        max-width: 600px;
+        margin-bottom: 15px;
+    }
+
+    .project-card img {
+        width: 100%;
+    }
+
     .main_img {
         display: none;
     }

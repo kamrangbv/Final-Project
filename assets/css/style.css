@@ -7,9 +7,9 @@
     font-family: 'Ubuntu';
 }
 
-/* html {
-    padding: 0 25px;
-} */
+html {
+    padding: 0;
+}
 
 img {
     -webkit-user-select: none;
@@ -78,6 +78,241 @@ img {
     padding: 50px 110px 50px 110px;
 }
 
+.testimonial {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    background-color: #F5F5F5;
+    padding: 0 115px 0 115px;
+}
+
+.testimonial-container {
+    height: 100vh;
+    width: 100%;
+    background-image: url(../../img/map.png);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.contact {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    padding: 0 115px 0 115px;
+}
+
+.contact-container {
+    padding-top: 20px;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer {
+    width: 100%;
+    height: 170px;
+    padding: 0 115px 0 115px;
+    background-color: #282C4B;
+}
+
+.footer-container {
+    width: 100%;
+    height: 170px;
+    display: flex;
+    align-items: center;
+}
+
+.footer-copyright {
+    font-family: 'Ubuntu';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 18px;
+    margin-bottom: 0;
+    /* Text/On White */
+    color: #FFFFFF;
+    margin-left: 70px;
+}
+
+.ptg {
+    display: flex;
+    align-items: center;
+}
+
+.ptg img {
+    cursor: pointer;
+    margin-left: 20px;
+}
+
+/* .email-date {
+    display: flex;
+}
+
+#username,
+#message,
+.email-date {
+    width: 100%;
+}
+
+.email-date input {
+    width: 40%;
+} */
+.contact-us {
+    width: 85%;
+    padding: 0 15px;
+}
+
+.contact-us h1 {
+    font-family: 'Ubuntu';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 53px;
+
+    /* or 147% */
+    letter-spacing: 0.02em;
+
+    color: #282C4B;
+}
+
+.contact-us p {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    color: #F17216;
+    align-items: center;
+}
+
+.contact-image {
+    width: 100%;
+}
+
+.styled-input {
+    float: left;
+    width: 293px;
+    margin: 1rem 0;
+    position: relative;
+    border-radius: 4px;
+}
+
+@media only screen and (max-width: 768px) {
+    .styled-input {
+        width: 100%;
+    }
+}
+
+.remove-all-padding {
+    padding: 0 !important;
+}
+
+.styled-input label {
+    position: relative;
+    -webkit-transition: all 0.25s ease;
+    transition: all 0.25s ease;
+    pointer-events: none;
+
+    font-family: 'Ubuntu';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 32px;
+
+    /* identical to box height, or 160% */
+
+    color: #14183E;
+}
+
+.styled-input.wide {
+    width: 650px;
+    max-width: 100%;
+}
+
+input,
+textarea {
+    padding: 16px;
+    border: 0;
+    width: 100%;
+    font-size: 14px;
+    background-color: #FFF8F8;
+    color: black;
+    border-radius: 4px;
+    margin: 0;
+}
+
+input:focus,
+textarea:focus {
+    outline: 0;
+}
+
+textarea {
+    resize: none;
+}
+
+.align-items-center {
+    display: flex;
+    align-items: center;
+}
+
+input:focus~span,
+textarea:focus~span {
+    width: 100%;
+    -webkit-transition: all 0.075s ease;
+    transition: all 0.075s ease;
+}
+
+textarea {
+    width: 100%;
+    min-height: 110px;
+}
+
+.input-container {
+    width: 650px;
+    max-width: 100%;
+    margin: 20px auto 25px auto;
+}
+
+.submit-btn {
+    margin-top: 40px;
+    float: left;
+    padding: 25px 40px;
+    border-radius: 60px;
+    display: inline-block;
+    color: white;
+    font-size: 18px;
+    cursor: pointer;
+    background: linear-gradient(97.32deg, #FF698D -3.47%, #FB3F6C 108.43%);
+    border: 2px solid rgba(255, 255, 255, 0.8);
+    box-shadow: 0px 30px 50px rgba(168, 22, 75, 0.15);
+    border-radius: 192px;
+    transition: all 300ms ease;
+}
+
+.submit-btn:hover {
+    transform: translateY(1px);
+    box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.10),
+        0 1px 1px 0 rgba(0, 0, 0, 0.09);
+}
+
+@media (max-width: 768px) {
+    .submit-btn {
+        width: 100%;
+        float: none;
+        text-align: center;
+    }
+}
+
+input[type=checkbox]+label {
+    color: #ccc;
+    font-style: italic;
+}
+
+input[type=checkbox]:checked+label {
+    color: #f00;
+    font-style: normal;
+}
+
 .projects {
     width: 100%;
     min-height: 710px;
@@ -111,7 +346,7 @@ img {
 
 .project-info {
     max-width: 370px;
-    height: 280px;
+    min-height: 280px;
     background-color: #F5F5F5;
     padding: 12px;
     display: flex;
@@ -119,6 +354,39 @@ img {
     justify-content: center;
     gap: 20px;
     transition: linear .2s all;
+}
+
+.testimonial-info {
+    max-width: 370px;
+    background-color: transparent;
+    padding: 12px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    transition: linear .2s all;
+    margin-top: 50px;
+}
+
+.testimonial-info p {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    color: #F17216;
+    align-items: center;
+    margin: 0;
+}
+
+.testimonial-info h1 {
+    font-family: 'Ubuntu';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 53px;
+
+    /* or 147% */
+    letter-spacing: 0.02em;
+
+    color: #282C4B;
 }
 
 .project-info p {
@@ -732,6 +1000,7 @@ img {
 }
 
 @media only screen and (max-width: 1296px) {
+
     .services_text h1 {
         font-size: 34px;
     }
@@ -807,6 +1076,40 @@ img {
 
 
 @media only screen and (max-width: 991px) {
+    .footer {
+        padding: 0 35px 0 35px;
+    }
+
+    .ptg {
+        display: none;
+    }
+
+    .contact-us {
+        width: 100%;
+        padding: 0 15px;
+    }
+
+    .float-left {
+        float: left !important;
+    }
+
+    .contact-imagee {
+        display: none;
+    }
+
+    .contact-us h1 {
+        font-size: 26px;
+        line-height: 40px;
+    }
+
+    .contact {
+        padding: 0;
+    }
+
+    .testimonial {
+        padding: 0 35px 0 35px;
+    }
+
     .project-card {
         max-width: 600px;
         margin-bottom: 15px;
@@ -938,6 +1241,46 @@ img {
 }
 
 @media only screen and (max-width: 476px) {
+    .contact-us h1 {
+        font-size: 18px;
+        line-height: 20px;
+    }
+
+    .styled-input label {
+        font-size: 14px;
+        line-height: 26px;
+    }
+
+    .submit-btn {
+        margin-top: 20px;
+    }
+
+    input,
+    textarea {
+        padding: 17px;
+        border: 0;
+        width: 100%;
+        font-size: 14px;
+        background-color: #FFF8F8;
+        color: black;
+        border-radius: 4px;
+        margin: 0;
+    }
+
+    .submit-btn {
+        margin-top: 15px;
+        float: left;
+        padding: 20px 35px;
+        border-radius: 60px;
+        display: inline-block;
+        color: white;
+        font-size: 15px;
+    }
+
+    textarea {
+        height: 100px !important;
+    }
+
     .services_item {
         width: 255px;
         min-height: 290px;

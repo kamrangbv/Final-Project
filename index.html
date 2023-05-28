@@ -31,7 +31,30 @@
 </head>
 
 <body>
+  <nav class="header__nav nav-bar">
+    <div class="toggle-menu">
+      <div class="line line1"></div>
+      <div class="line line2"></div>
+      <div class="line line3"></div>
+    </div>
+    <ul class="nav-list">
+      <li class="nav-list-item"><a href="" class="nav-link">Service</a></li>
+      <li class="nav-list-item"><a href="" class="nav-link">Resource</a></li>
+      <li class="nav-list-item">
+        <a href="" class="nav-link">Company</a>
+      </li>
+      <li class="nav-list-item"><a href="" class="nav-link">Blog</a></li>
+      <li class="nav-list-item">
+        <a href="" class="nav-link">Contact Us</a>
+      </li>
+      <li class="nav-list-item">
+        <a href="" class="nav-link">Let's Talk</a>
+      </li>
+
+    </ul>
+  </nav>
   <div class="container-fluid hero">
+
     <img class="rect1" src="./img/rect1.svg" alt="" />
     <img class="rect2" src="./img/rect2.svg" alt="" />
     <div class="container-fluid navbar_hero">
@@ -42,11 +65,12 @@
         <div class="col-xs-6 col-sm-6 col-md-6 col-lg-10 navigation">
           <!-- ------------------------ -->
 
-          <div id="burger-menu">
+          <!-- <div id="burger-menu">
             <span></span>
           </div>
 
           <div id="menu">
+
             <ul>
               <li class="nav_item"><a href="#">Service</a></li>
               <li class="nav_item"><a href="#">Resource</a></li>
@@ -57,7 +81,13 @@
                 <a class="nav_item" href="#">Let's Talk</a>
               </li>
             </ul>
-          </div>
+
+          </div> -->
+
+
+
+
+
 
           <!-- ------------------------ -->
 
@@ -309,16 +339,18 @@
                     <input id="username" type="text" required />
                   </div>
                 </div>
-                <div class="col-md-6 col-sm-12 col-xs-12 remove-all-padding">
-                  <div class="styled-input float-left">
-                    <label>Email</label>
-                    <input type="text" required />
+                <div class="col-xs-12 remove-all-padding">
+                  <div class="col-md-6 col-sm-12 col-xs-12 remove-all-padding md-full-wide lg-wide">
+                    <div class="styled-input float-left md-wide">
+                      <label>Email</label>
+                      <input type="text" required />
+                    </div>
                   </div>
-                </div>
-                <div class="col-md-6 col-sm-12 col-xs-12 remove-all-padding">
-                  <div class="styled-input float-left" style="float:right;">
-                    <label>Date</label>
-                    <input type="date" required />
+                  <div class="col-md-6 col-sm-12 col-xs-12 remove-all-padding md-full-wide lg-wide">
+                    <div class="styled-input float-left md-wide" style="float:right;">
+                      <label>Date</label>
+                      <input type="date" required />
+                    </div>
                   </div>
                 </div>
                 <div class="col-xs-12 remove-all-padding">

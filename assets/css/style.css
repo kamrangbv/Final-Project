@@ -97,14 +97,14 @@ img {
 
 .contact {
     width: 100%;
-    height: 100vh;
+    min-height: 100vh;
     position: relative;
     padding: 0 115px 0 115px;
 }
 
 .contact-container {
     padding-top: 20px;
-    height: 100vh;
+    min-height: 100vh;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -861,7 +861,7 @@ input[type=checkbox]:checked+label {
 
 
 /* ------------------------- */
-
+/* 
 #burger-menu {
     cursor: pointer;
     height: 27px;
@@ -963,15 +963,158 @@ input[type=checkbox]:checked+label {
     margin-bottom: 30px;
     text-decoration: none;
 }
-
+*/
 
 /* ------------------------- */
 
+/* ---------------------- */
 
+.nav-bar {
+    position: fixed;
+    background: #282C4B;
+    top: 0;
+    right: 100%;
+    height: 100vh;
+    width: 250px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: position 2.9s;
+    -webkit-transition: position 2.9s;
+    -moz-transition: position 2.9s;
+    -ms-transition: position 2.9s;
+    -o-transition: position 2.9s;
+    z-index: 400;
+}
+
+.toggle {
+    left: 0;
+    box-shadow: 1px 0 15px 2px rgba(0, 0, 0, 0.4);
+
+}
+
+.toggle-menu {
+    background-color: white;
+    display: none !important;
+    z-index: 400;
+    position: fixed;
+    top: 45px;
+    right: 45px;
+    width: 40px;
+    height: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 2px 2px 2px 3px;
+    border-radius: 5px;
+    cursor: pointer;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
+
+.line {
+    width: 100%;
+    height: 3px;
+    border-radius: 5px;
+    background-color: #000;
+    transition: transform 0.2s ease-out;
+    -webkit-transition: transform 0.2s ease-out;
+    -moz-transition: transform 0.2s ease-out;
+    -ms-transition: transform 0.2s ease-out;
+    -o-transition: transform 0.2s ease-out;
+}
+
+.toggle .line1 {
+    background-color: #000000;
+    transform: scale(0.9) rotateZ(-45deg) translate(-6px, 4px);
+}
+
+.toggle .line2 {
+    display: none;
+}
+
+.toggle .line3 {
+    background-color: #000000;
+    transform: scale(0.9) rotateZ(45deg) translate(-6px, -4px);
+}
+
+.toggle .toggle-menu {
+    background-color: #FFF !important;
+}
+
+.nav-list {
+    list-style: none;
+}
+
+.nav-list-item {
+    text-align: center;
+    padding: 10px 0;
+}
+
+.nav-link {
+    color: #fff;
+    font-size: 22px;
+    text-decoration: none;
+    position: relative;
+    padding-bottom: 4px;
+}
+
+.nav-link:hover {
+    color: #fff;
+    text-decoration: none;
+}
+
+.nav-link::before {
+    position: absolute;
+    content: '';
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 1px;
+    background-color: #fff;
+    transform: scaleX(0);
+    transition: transform 0.4s ease-in-out;
+    transform-origin: left;
+    -webkit-transition: transform 0.4s ease-in-out;
+    -moz-transition: transform 0.4s ease-in-out;
+    -ms-transition: transform 0.4s ease-in-out;
+    -o-transition: transform 0.4s ease-in-out;
+}
+
+.nav-link:hover::before {
+    transform: scaleX(1);
+}
+
+.lg-wide {
+    width: 320px;
+}
+
+
+/* ---------------------- */
+
+
+@media only screen and (max-width: 1919px) {
+    .md-full-wide {
+        width: 100% !important;
+    }
+
+    .md-wide {
+        width: 650px;
+        max-width: 100%;
+    }
+}
+
+@media only screen and (max-width: 1802px) {}
 
 @media only screen and (max-width: 1496px) {
     #burger-menu {
         display: flex;
+    }
+
+    .toggle-menu {
+        display: flex !important;
     }
 
     .nav_list {
